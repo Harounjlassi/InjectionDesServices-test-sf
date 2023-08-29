@@ -141,6 +141,7 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/davidbadura/markdown-builder" />
       <path value="$PROJECT_DIR$/vendor/davidbadura/faker-markdown-generator" />
+      <path value="$PROJECT_DIR$/vendor/cebe/markdown" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
