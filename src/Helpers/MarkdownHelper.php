@@ -6,10 +6,9 @@ use cebe\markdown\Markdown;
 
 class MarkdownHelper
 {
-    protected $parse;
-    public function __construct(Markdown $parser)
+
+    public function __construct(protected Markdown $parser)
     {
-        $this->parse = $parser;
     }
     public function parse(array $posts): array
     {
@@ -19,7 +18,7 @@ class MarkdownHelper
         foreach ($posts as $post) {
             $parsePosts[] = [
                 'title' => $post->getTitle(),
-                'content' =>$this->parse->parse($post->getContent())
+                'content' =>$this->parser->parse($post->getContent())
             ];
 
         }
